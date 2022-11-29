@@ -1,5 +1,5 @@
 # Auraxis
-Nobody knows. Freestyle. The player ID isn't able to be passed with the copy constructor when changing the username. I wanted to use the prototype pattern. That's the only downside to the design. 
+
 
 - Abstract Factory 
   - create player
