@@ -1,4 +1,4 @@
-package model.data.satellites
+package model.satellites
 
 interface ISatellite{
     fun broadcast()

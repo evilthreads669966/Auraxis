@@ -1,8 +1,8 @@
-package model.data.satellites
+package model.satellites
 
 import java.io.BufferedWriter
 
-class PopulationSatellite: ISatellite{
+class PopulationSatellite: ISatellite {
     override fun broadcast() = multiThreadedServer(6666){ sock ->
         val writer = BufferedWriter(sock.getOutputStream().writer())
         writer.write(Auraxis.population)

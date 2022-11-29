@@ -1,4 +1,4 @@
-package model.data.satellites
+package model.satellites
 
 import java.net.ServerSocket
 import java.net.Socket

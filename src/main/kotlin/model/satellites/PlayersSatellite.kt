@@ -1,4 +1,4 @@
-package model.data.satellites
+package model.satellites
 
 import com.google.gson.Gson
 import java.io.BufferedWriter

@@ -16,8 +16,8 @@ import model.data.factions.ControllingFaction
 import model.data.kits.factory.KitFactory
 import model.data.players.PlanetsidePlayer
 import model.data.players.types.Faction
-import model.data.satellites.PlayersSatellite
-import model.data.satellites.PopulationSatellite
+import model.satellites.PlayersSatellite
+import model.satellites.PopulationSatellite
 import planet.IPlanet
 import planet.accountservice.AccountService
 import planet.accountservice.IAccountService
