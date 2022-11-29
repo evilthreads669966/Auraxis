@@ -3,8 +3,6 @@
 
 - Abstract Factory 
   - create player
-- Factory Method
-  - warpgate spawn point
 - Template Method
   - player celebraton dance/sing
 - Visitor
