@@ -1,9 +1,9 @@
 package model.data.players.vehicles
 
-import VehicleFactory
 import model.data.players.types.Faction
 import model.data.guns.Gun
 import model.data.players.PlanetsidePlayer
+import model.data.players.factories.VehicleFactory
 
 class Flash private constructor(val player: PlanetsidePlayer, gun: Gun) : PlanetsidePlayer() {
     override val username: String = player.username
