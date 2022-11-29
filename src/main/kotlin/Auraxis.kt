@@ -76,6 +76,8 @@ class AuraxisLogger : AuraxisObserver {
     override fun update(msg: String) = log(msg)
 }
 
+
+
 data class AuraxisMemento(val controllingFaction: ControllingFaction, val players: MutableSet<PlanetsidePlayer>)
 
 interface IAuraxis: ISatellite {

@@ -2,12 +2,14 @@ import com.google.gson.Gson
 import model.data.abilities.MedicAbility
 import model.data.factions.ControllingFaction
 import model.data.guns.GaussRifle
+import model.data.guns.ScatterCannon
 import model.data.guns.Turret
 import model.data.guns.addons.HighVelocityAmmo
 import model.data.guns.addons.RedDotScope
 import model.data.kits.AmmoKit
 import model.data.kits.types.KitType
 import model.data.players.infantry.Infantry
+import model.data.players.infantry.suits.MaxSuit
 import model.data.players.types.Faction
 import org.junit.jupiter.api.Test
 import java.io.BufferedReader
@@ -69,6 +71,17 @@ class PlanetsidePlayerTest {
         assert(vanu.faction == Faction.VANU_SOVEREIGNTY)
         assert(tr.faction == Faction.TERRAN_REPUBLIC)
         assert(nc.faction == Faction.NEW_CONGLOMERATE)
+    }
+}
+
+class MaxSuitTest{
+    @Test
+    fun maxSuitDamageIs10(){
+        val infantry = Infantry.createPlayer("evilthreads", GaussRifle(), Faction.NEW_CONGLOMERATE)
+        val max = MaxSuit(infantry, ScatterCannon())
+        val vanu = Infantry.createPlayer("chris", GaussRifle(), Faction.VANU_SOVEREIGNTY)
+        max.attack(vanu)
+        assert(vanu.health == 90)
     }
 }
 

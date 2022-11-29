@@ -1,10 +1,10 @@
 package model.data.players
 
-import Kit
 import model.data.abilities.Ability
 import model.data.abilities.GrenadeAbility
 import model.data.players.types.Faction
 import model.data.guns.Gun
+import model.data.kits.Kit
 
 abstract class PlanetsidePlayer {
     abstract val username: String
