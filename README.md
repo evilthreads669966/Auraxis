@@ -1,5 +1,4 @@
-# planet
-
+# Auraxis
 
 - Abstract Factory 
   - create player
@@ -10,11 +9,11 @@
 - Strategy
   - player abilities
 - Observer
-  - planet logger
+  - Auraxis logger
 - Memento
-  - planet backup
+  - Auraxis backup
 - Singleton
-  - planet, CommunicationsCenter, etcetera
+  - Auraxis, CommunicationsCenter, etcetera
 - Bridge
   - gun
 - Decorator
@@ -24,9 +23,9 @@
 - Adapter
   - player vehicles
 - State
-  - planet controlling faction
+  - Auraxis controlling faction
 - Iterator
-  - planet players
+  - Auraxis players
 - Composite
   - satellites
 - Prototype
