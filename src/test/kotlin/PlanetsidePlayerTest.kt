@@ -12,6 +12,9 @@ import model.data.players.infantry.Infantry
 import model.data.players.infantry.suits.MaxSuit
 import model.data.players.types.Faction
 import org.junit.jupiter.api.Test
+import planet.memento.AuraxisCaretaker
+import spawnpoints.VehicleDepot
+import spawnpoints.WarpGate
 import java.io.BufferedReader
 import java.net.Socket
 
@@ -61,7 +64,7 @@ class PlanetsidePlayerTest {
     fun copyTest(){
         val player = WarpGate.spawn("chris", GaussRifle(), Faction.NEW_CONGLOMERATE)
         val other = player.copy("evilthreads")
-        assert(player.username == other.username)
+        assert(other.username == "evilthreads")
     }
     @Test
     fun playersAreCorrectFaction(){
@@ -121,9 +124,9 @@ class VehicleTest {
     @Test
     fun flashTest() {
         val player = WarpGate.spawn("evilthreads", GaussRifle(), Faction.NEW_CONGLOMERATE)
-        val vehicle = VehicleSpawnPoint.spawn(player, RedDotScope(Turret()))
+        val vehicle = VehicleDepot.spawnVehicle(player, RedDotScope(Turret()))
         val otherPlayer = WarpGate.spawn("fool", GaussRifle(), Faction.TERRAN_REPUBLIC)
-        val otherVehicle = VehicleSpawnPoint.spawn(otherPlayer, Turret())
+        val otherVehicle = VehicleDepot.spawnVehicle(otherPlayer, Turret())
         vehicle.attack(otherVehicle)
         vehicle.attack(otherPlayer)
         assert(otherPlayer.health == 50)

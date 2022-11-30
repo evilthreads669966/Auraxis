@@ -8,7 +8,7 @@ import model.data.players.types.Faction
 object WarpGate : IWarpGate {
     override fun spawn(username: String, gun: Gun, faction: Faction): PlanetsidePlayer {
         val infantry = Infantry.createPlayer(username,gun,faction)
-        planet.addPlayer(infantry)
+        Auraxis.addPlayer(infantry)
         return infantry
     }
 }

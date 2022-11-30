@@ -1,11 +1,11 @@
 package planet
 
-import IAccountService
 import model.data.factions.ControllingFaction
 import model.data.kits.factory.KitFactory
 import model.data.players.PlanetsidePlayer
 import model.data.players.types.Faction
 import model.satellites.ISatellite
+import planet.accountservice.IAccountService
 
 interface IPlanet: ISatellite {
     val controllingFaction: ControllingFaction
