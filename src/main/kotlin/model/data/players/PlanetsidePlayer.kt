@@ -5,6 +5,7 @@ import model.data.abilities.GrenadeAbility
 import model.data.players.types.Faction
 import model.data.guns.Gun
 import model.data.kits.Kit
+import planet.messaging.CommunicationsCenter
 
 abstract class PlanetsidePlayer {
     abstract val username: String
