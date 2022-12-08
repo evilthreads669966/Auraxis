@@ -20,8 +20,6 @@
   - gun addons
 - Mediator
   - player messaging
-- Adapter
-  - player vehicles
 - State
   - Auraxis controlling faction
 - Iterator
