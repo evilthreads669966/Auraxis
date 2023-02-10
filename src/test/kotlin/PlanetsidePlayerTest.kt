@@ -179,7 +179,13 @@ class AuraxisTest {
     @Test
     fun iteratorTest() {
         val player = WarpGate.spawn("chris", GaussRifle(), Faction.NEW_CONGLOMERATE)
-        assert(Auraxis.count() == 1)
+        val iterator = Auraxis.iterator()
+        var count = 0
+        while(iterator.hasNext()){
+            iterator.next()
+            count++
+        }
+        assert(count == 1)
     }
 
     @Test
