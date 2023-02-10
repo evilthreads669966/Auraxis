@@ -189,6 +189,12 @@ class AuraxisTest {
     }
 
     @Test
+    fun countTest(){
+        WarpGate.spawn("chris", GaussRifle(), Faction.NEW_CONGLOMERATE)
+        assert(Auraxis.count() == 1)
+    }
+
+    @Test
     fun addRemovePlayerTest(){
         val player = WarpGate.spawn("chris", GaussRifle(), Faction.NEW_CONGLOMERATE)
         assert(Auraxis.population == 1)
